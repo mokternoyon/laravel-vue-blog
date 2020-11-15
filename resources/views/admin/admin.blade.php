@@ -12,7 +12,7 @@
 
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
-    <div class="wrapper">
+    <div class="wrapper" id="app">
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -73,30 +73,35 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <router-link to="/home" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
-                            </a>
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/category-list" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>Category</p>
+                            </router-link>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
-                                <p>Category</p>
-                            </a>
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
                                 <p>Tag</p>
                             </a>
-                            <a href="#" class="nav-link">
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/post" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Posts
                                     <span class="right badge badge-danger">New</span>
                                 </p>
-                            </a>
+                            </router-link>
+                        </li>
                         </li>
                     </ul>
                 </nav>
@@ -107,61 +112,20 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>Blank Page</h1>
-                        </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Blank Page</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div><!-- /.container-fluid -->
-            </section>
 
-            <!-- Main content -->
-            <section class="content">
 
-                <!-- Default box -->
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Title</h3>
+            <admin-main></admin-main>
 
-                        <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        Start creating your amazing application!
-                    </div>
-                    <!-- /.card-body -->
-                    <div class="card-footer">
-                        Footer
-                    </div>
-                    <!-- /.card-footer-->
-                </div>
-                <!-- /.card -->
 
-            </section>
-            <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
 
         <footer class="main-footer">
+
             <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.1.0-pre
+                <b>Version</b> 1.0.0
             </div>
-            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
+            <strong>Copyright &copy; 2014-2020 <a href="#">Super Blog</a>.</strong> All rights
             reserved.
         </footer>
 

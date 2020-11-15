@@ -14,7 +14,8 @@ class TagController extends Controller
      */
     public function index()
     {
-        //
+        $tag = Tag::with('posts')->get();
+        return $tag;
     }
 
     /**
